@@ -1,0 +1,42 @@
+#time-counter {
+  text-align: center;
+  height: 96px;
+  font-size: xx-large;
+  margin-bottom: 50px;
+}
+
+.intro {
+  font-family: Ballet;
+  font-weight: bolder;
+  font-size: xx-large;
+  height: 96px;
+  padding: 35px;
+  text-align: center;
+  margin: 0;
+}
+
+#time-counter,
+.intro {
+  background-color: aliceblue;
+}
+
+.payment {
+  text-align: center;
+}
+
+.payment-info {
+  margin-bottom: 50px;
+}
+
+.places {
+  text-align: center;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding: 0px;
+  width: 100vw;
+  overflow: hidden;
+}

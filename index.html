@@ -3,35 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tour Details</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Tour We Cherish</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ballet&display=swap"
+      rel="stylesheet"
+    />
+    <!-- adding  bootstrap framework -->
+    <link rel="stylesheet" href="css/bootstrap-4.4.1-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/my-style.css" />
   </head>
   <body>
-    <h1>Great Tour</h1>
-    <p>Are you going??</p>
-    <div>
-      <button class="btn btn-yes">YES</button>
-      <button class="btn btn-no">NO</button>
-    </div>
-    <div class="dynamic">
-      <audio class="fuck-you" src="audio/fuck-you.mp3">fuck you</audio>
-      <audio class="love-you" src="audio/i-love-you-i-love-you-i-love-you.mp3">
-        love you
-      </audio>
-    </div>
-    <img class="love-svg" src="images/love-svgrepo-com.svg" alt="" />
-    <img
-      src="images/middle-finger-gesture-svgrepo-com.svg"
-      alt=""
-      class="fuck-svg"
-    />
+    <!-- nav bar  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Home</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gallary</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Log-in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Registration</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-    <footer>
-      Website is under construction. <br />Please wait for more fucking
-      features.
-    </footer>
+    <!-- time counter -->
+    <p class="intro">Remaining Time</p>
+    <p id="time-counter"></p>
 
-    <script src="script.js"></script>
+    <!-- payment table -->
+    <p class="payment">They confirmed the tour. Why are you waiting??</p>
+    <table class="table payment-info">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Payer</th>
+          <th scope="col">Receiver</th>
+          <th scope="col">Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Sohan</td>
+          <td>Rahat</td>
+          <td>1500tk</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Rahat</td>
+          <td>Rahat</td>
+          <td>1500tk</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- places to visit -->
+    <p class="places">Places to visit</p>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ma01ol3ojYlU5W9X3_anDm4E0p3k2JUG" width="640" height="480"></iframe>
+    </div>
+    
+
+    <!-- footer  -->
+    <div class="my-footer"></div>
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+          © 2021 Copyright:
+          <a class="text-dark" href="#">Digital Infrustructure Limited</a>
+        </div>
+        <!-- Copyright -->
+      </footer
+
+    <!-- script for time-counter -->
+    <script src="js/timeCounter.js"></script>
+
+    <!-- JS file from bootstrap framework -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script src="css/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
