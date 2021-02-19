@@ -1,16 +1,6 @@
-@keyframes anm {
-  0% {
-    transform: rotate(15deg);
-  }
-  50% {
-    transform: rotate(-15deg);
-  }
-  75% {
-    transform: rotate(15deg);
-  }
-  100% {
-    transform: rotate(-15deg);
-  }
+body {
+  background-color: rgba(129, 195, 195, 0.2);
+  z-index: -200;
 }
 
 #time-counter {
@@ -32,18 +22,38 @@
   margin: 0;
 }
 
-#time-counter,
-.intro {
-  background-color: aliceblue;
-  /* animation: anm 5s infinite; */
+.confirmed-person {
+  background-color: rgba(52, 88, 88, 0.2);
 }
 
-.payment {
+.confirmed-person p {
   text-align: center;
+  margin-bottom: 10px;
+  color: indigo;
 }
 
-.payment-info {
-  margin-bottom: 50px;
+.persons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.person {
+  width: 20vw;
+  height: 20vw;
+  margin: 10px;
+  text-align: center;
+  align-self: center;
+  padding: 7vw;
+}
+
+.person:hover {
+  color: brown;
+  background-color: aquamarine;
+  transform: rotate(20deg);
+  /* transform: scale(1.3); */
+  transition: transform 1s;
 }
 
 .places {
@@ -54,7 +64,22 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0px;
-  width: 100vw;
+  width: 94vw;
   overflow: hidden;
+  z-index: -2000;
+}
+
+#particles-js {
+  background-color: rgb(129, 195, 195);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -100;
+}
+
+.bg-light {
+  background-color: rgba(27, 30, 31, 0.3) !important;
 }

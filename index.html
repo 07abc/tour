@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="css/bootstrap-4.4.1-dist/css/bootstrap.css" />
     <link rel="stylesheet" href="css/my-style.css" />
   </head>
-  <body>
+  <body >
+    <div id="particles-js"></div>
     <!-- nav bar  -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Home</a>
@@ -57,43 +58,21 @@
     <p id="time-counter"></p>
 
     <!-- payment table -->
-    <p class="payment">They confirmed the tour. Why are you waiting??</p>
-    <table class="table payment-info">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Payer</th>
-          <th scope="col">Receiver</th>
-          <th scope="col">Amount</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Sohan</td>
-          <td>Rahat</td>
-          <td>1500tk</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Rahat</td>
-          <td>Rahat</td>
-          <td>1500tk</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Arnob</td>
-          <td>Rahat</td>
-          <td>1500tk</td>
-        </tr>
-        <tr>
-          <th scope="row">4</th>
-          <td>Ali</td>
-          <td>Rahat</td>
-          <td>1500tk</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="confirmed-person">
+      <p>They confirmed the tour. Why are you waiting??</p>
+      
+          <div class="persons">
+      <div class="person">Rahat</div>
+      <div class="person">Ali</div>
+      <div class="person">Himel</div>
+      <div class="person">Sohan</div>
+      <div class="person">Arnob</div>
+      
+      <div class="person">Arafat</div>
+      <div class="person">Sifat</div>
+      <div class="person">Sujon</div>
+      </div>
+    </div>
 
     <!-- places to visit -->
     <p class="places">Places to visit</p>
@@ -115,6 +94,15 @@
 
     <!-- script for time-counter -->
     <script src="js/timeCounter.js"></script>
+        
+
+    <!-- config particlejs -->
+    <script src="js/particles.js"></script>
+<script>
+  particlesJS.load('particles-js', 'js/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+</script>
 
     <!-- JS file from bootstrap framework -->
     <!-- Optional JavaScript -->
